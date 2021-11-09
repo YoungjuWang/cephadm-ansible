@@ -7,7 +7,30 @@
 # You must define a group [admin] in your inventory with a node where
 # the admin keyring is present at /etc/ceph/ceph.client.admin.keyring
 #
+# Inventory example:
+# ------------------
+# $ cat inventory
+# mon1
+# mon2
+# mon3
+# osd1
+# osd2
+# osd3
+# mds1
+# mds2
+# rgw0
+#
+# [clients]
+# client0
+# client1
+# client2
+#
+# [admin]
+# node1
+#
+#
 # Usage:
+# ------
 #
 # ansible-playbook -i <inventory host file> cephadm-purge-cluster.yml -e fsid=<your fsid>
 

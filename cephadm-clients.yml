@@ -4,6 +4,17 @@
 #
 # Distribute keyring and conf files to a set of clients
 #
+# Inventory example:
+# ------------------
+# $ cat inventory
+# [admin]
+# node1
+#
+# [clients]
+# client1
+# client2
+# client3
+#
 # Uses ceph-defaults
 #  - local_client_dir: determines the dir name for the config files on the ansible host
 #  - ceph_client_pkgs: list of pre-req packages that must be on the client
